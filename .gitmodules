@@ -1,0 +1,6 @@
+[submodule "hugo-primer"]
+	path = hugo-primer
+	url = https://github.com/qqhann/hugo-primer.git
+[submodule "new/themes/hugo-primer"]
+	path = new/themes/hugo-primer
+	url = https://github.com/qqhann/hugo-primer.git
