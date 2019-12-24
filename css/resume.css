@@ -145,7 +145,7 @@ em.fa-li {top: 6px;}
 
 /** cookies bar **/
 .cookieAcceptBar {
-  //display:none;
+  display:none;
   position: fixed;
   top: 0;
   left:0;
