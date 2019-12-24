@@ -307,7 +307,8 @@
     });
 
     function cookiesPolicyBar(){
-        if ($.cookie('yourCookieName') != "active") $('#cookieAcceptBar').show();
+        //if ($.cookie('yourCookieName') != "active") 
+        $('#cookieAcceptBar').show();
         $('#cookieAcceptBarConfirm').on('click',function(){
             $.cookie('yourCookieName', 'active', { expires: 99 }); // cookie will expire in one day
             $('#cookieAcceptBar').fadeOut();
