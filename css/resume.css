@@ -168,7 +168,8 @@ em.fa-li {top: 6px;}
 }
 
 .cookiealert a {
-    text-decoration: underline
+    text-decoration: underline;
+    color: #fff;
 }
 
 .cookiealert .acceptcookies {
