@@ -144,7 +144,7 @@ h2.desc {
 em.fa-li {top: 6px;}
 
 /** cookies bar **/
-.cookieAcceptBar {
+cookieAcceptBar {
   display:none;
   position: fixed;
   top: 0;
