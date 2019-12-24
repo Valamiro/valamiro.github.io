@@ -113,7 +113,7 @@
         <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
           <div id="cookieAcceptBar" class="cookieAcceptBar">
             Before browse our site, please accept our <a href="#">cookies policy</a><br> <button id="cookieAcceptBarConfirm" class="btn btn-success">Accept and close this alert</button>
-          </div> 
+          </div>
             <div class="my-auto">
                 <h1 class="mb-0">Riccardo<span class="text-primary">Mariani</span></h1>
                 <div class="subheading mb-5"><span style="white-space: nowrap;">(+39) 328 70 95 475</span> ·
@@ -301,5 +301,20 @@
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="js/resume.min.js"></script>
+    <script>
+    $(document).on('ready', function(){
+      cookiesPolicyBar()
+    });
+
+    function cookiesPolicyBar(){
+        // Check cookie
+        if ($.cookie('yourCookieName') != "active") $('#cookieAcceptBar').show();
+        //Assign cookie on click
+        $('#cookieAcceptBarConfirm').on('click',function(){
+            $.cookie('yourCookieName', 'active', { expires: 1 }); // cookie will expire in one day
+            $('#cookieAcceptBar').fadeOut();
+        });
+    }    
+    </script>
 </body>
 </html>
