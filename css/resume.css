@@ -144,7 +144,7 @@ h2.desc {
 em.fa-li {top: 6px;}
 
 /*
- * Bootstrap Cookie Alert 
+ * Bootstrap Cookie Alert
  */
 .cookiealert {
     position: fixed;
@@ -152,7 +152,7 @@ em.fa-li {top: 6px;}
     left: 0;
     width: 100%;
     margin: 0 !important;
-    z-index: 999;
+    z-index: 9999;
     opacity: 0;
     border-radius: 0;
     transform: translateY(100%);
